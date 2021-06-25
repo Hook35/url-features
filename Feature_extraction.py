@@ -685,7 +685,7 @@ def Tokenise(url):
             return subelement.attributes[attribute].value
     return nf'''
 
-#URL nin rank sorgusu
+#URL rank query
 def sitepopularity(host):
     xmlpath = 'http://data.alexa.com/data?cli=10&dat=snbamz&url=' + host
     # print xmlpath
@@ -788,7 +788,7 @@ def web_content_features(url):
 
     return wfeatures
 
-#Sitenin Güvenliğinin Sorgulanması
+#Checking safety of web pages
 def safebrowsing(url):
     api_key = "AIzaSyAE4JrIOF0H77CYoRB2V4FSqVuqYvex5Ns"
     name = "PhishDetector"

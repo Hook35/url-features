@@ -331,7 +331,7 @@ class Domain(object):
     # DOMAİN'S CLASS
     def ipBlacklist(self, iod, ip_or_domain, post):
         try:
-            parameters = {iod: ip_or_domain, 'apikey': '0b9235ea994ae701f2a4a06d6a125517568c4527671d11da81083fe372714b72'}
+            parameters = {iod: ip_or_domain, 'apikey': '<your-own-virustotal-api-key>'}
             urll = 'https://www.virustotal.com/vtapi/v2/' + post + '/report'
             urll = urll + '?' + urlencode(parameters)
             response = u.urlopen(urll).read()
@@ -528,7 +528,7 @@ class Url(object):
 
     def ipBlacklist(self, iod, ip_or_domain,post):
         try:
-            parameters = {iod: ip_or_domain, 'apikey': '0b9235ea994ae701f2a4a06d6a125517568c4527671d11da81083fe372714b72'}
+            parameters = {iod: ip_or_domain, 'apikey': '<your-own-virustotal-api-key>'}
             urll = 'https://www.virustotal.com/vtapi/v2/' + post + '/report'
             urll = urll + '?' + urlencode(parameters)
             response = u.urlopen(urll).read()
